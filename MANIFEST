@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+lib/Rcs/Parser.pm
+README
+t/01-load.t
+META.yml                                 Module meta-data (added by MakeMaker)
