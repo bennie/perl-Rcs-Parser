@@ -1,6 +1,12 @@
 Revision history for Perl extension Rcs::Parser.
 
+0.02  2004/04/02
+
+	Properly blessing into the class name.
+	Full copyright and license information.	
+
 0.01  2003/09/23
+
 	Conversion to the more correctly named Rcs::Parser for CPAN.
 
 0.00  2002/03/25 - 2003/09/23

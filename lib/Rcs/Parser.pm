@@ -104,8 +104,10 @@ CVS. Maybe soon. :)
 
 =head1 AUTHORSHIP:
 
-  (c) 2001-2003, Phillip Pollard, <bennie@cpan.org>
-      Released under GNU General Public License
+    Rcs::Parser v0.02 2004/04/02
+
+    (c) 2001-2004, Phillip Pollard <bennie@cpan.org>
+    Released under the Perl Artistic License
 
 =cut
 
@@ -122,16 +124,14 @@ CVS. Maybe soon. :)
 #*************************************************************************
 
 package Rcs::Parser;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use 5.006;
 #use warnings; Soon!
 use strict;
 
 sub new {
-  my $self = {};
-  bless  $self;
-  return $self;
+  bless {}, $_[0]
 }
 
 sub author {
