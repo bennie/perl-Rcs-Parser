@@ -1,5 +1,5 @@
 
-            Rcs::Parser - Parse and analyze RCS files - v0.01
+            Rcs::Parser - Parse and analyze RCS files - v0.03
 
 ================================================================================
 SYNOPSIS
@@ -26,14 +26,14 @@ EXAMPLE USAGE
 
     Retrieve the most recent file from an archive:
 
-      my $rcs = new RCS;
+      my $rcs = new Rcs::Parser;
       my $ret = $rcs->load($filename);
   
       my $current = $rcs->recent_version;
 
     To retrieve a specific version:
 
-      my $rcs = new RCS;
+      my $rcs = new Rcs::Parser;
       my $ret = $rcs->load($filename);
   
       my $specific_version = $rcs->get('1.2');
@@ -70,6 +70,13 @@ METHODS
     does not exist or is unreadable by the script, undef is returned.
     Otherwise, 1 is returned upon success.
 
+  load_scalar($data)
+
+    my $ret = $rcs->load_scalar($data);
+
+    The load command reads in and parses the provided RCS file in scalar 
+    form. 1 is returned upon success.
+
   notate()
 
     my $ret = $rcs->notate()
@@ -101,7 +108,7 @@ KNOWN ISSUES
 
     Beta Code:
 
-    This code is alpha. It has yet to fully understand binary formats stored
+    This code is beta. It has yet to fully understand binary formats stored
     in RCS and will treat them as text. Consquently, you'll see warnings.
     That being said, there shouldn't be any large scale bugs that will cause
     segfaulting or crashing. Only warnings.
@@ -112,7 +119,7 @@ KNOWN ISSUES
     About the only thing that can be found is the rcsfile(5) man page. The
     layout is mostly reverse engineered in this module. I have yet to have
     the time, or the skill and patience to disassemble the RCS portions of
-    the code for GNU CVS. Maybe soon. :)
+    the code for GNU CVS.
 
 ================================================================================
 ERATTA
@@ -127,8 +134,7 @@ ERATTA
 AUTHORSHIP
 ================================================================================
 
-    Rcs::Parser v0.02 2004/04/02
+    Rcs::Parser v0.03 2004/04/02
 
-    (c) 2001-2004, Phillip Pollard <bennie@cpan.org>
+    (c) 2001-2008, Phillip Pollard <bennie@cpan.org>
     Released under the Perl Artistic License
-
