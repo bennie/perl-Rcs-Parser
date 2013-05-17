@@ -450,15 +450,6 @@ sub _parse_in_rcs {
 
   $self->{finalpos} = pos($self->{rawfile}); # Done parsing? Remember position.
 
-  ### clean the leftover quoting
-
-  for my $version ( keys %$rcs ) {
-    for my $directive ( keys %{$rcs->{$version}} ) {
-      $rcs->{$version}->{$directive} = $1 if $rcs->{$version}->{$directive} =~ /^\@(.*)$/s;
-      $rcs->{$version}->{$directive} = $1 if $rcs->{$version}->{$directive} =~ /^(.*)\@$/s;
-    }
-  }
-
   ### disassemble header
 
   for my $version ( keys %$rcs ) {
