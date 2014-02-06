@@ -42,6 +42,7 @@ package Rcs::Parser;
 our $VERSION = '0.03';
 
 use 5.006;
+use Sort::Versions;
 use warnings;
 use strict;
 
@@ -265,11 +266,10 @@ This method returns an array or arrayref of all versions stored in the RCS file.
 
 sub all_versions {
   my $self = shift @_;
-  our @versions;
-  unless ( defined @versions ) {
-    @versions = sort { my @a = split '\.', $a; my @b = split '\.', $b; $b[0] <=> $a[0] || $b[1] <=> $a[1] } grep !/header/, keys %{$self->{rcs}};
+  unless ( defined $self->{all_versions} ) {
+    $self->{all_versions} = [ sort versioncmp grep !/header/, keys %{$self->{rcs}} ];
   }
-  return wantarray ? @versions : \@versions;
+  return wantarray ? @{$self->{all_versions}} : $self->{all_versions};
 }
 
 =head2 previous_version()
@@ -554,5 +554,5 @@ CVS.
 
     Rcs::Parser v0.02 2004/04/02
 
-    (c) 2001-2008, Phillip Pollard <bennie@cpan.org>
+    (c) 2001-2014, Phillip Pollard <bennie@cpan.org>
     Released under the Perl Artistic License
