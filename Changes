@@ -1,5 +1,9 @@
 Revision history for Perl extension Rcs::Parser.
 
+VERSIONTAG  DATETAG
+
+	Updated META.yaml and Makefile.PL
+
 0.03  2008/10/23
 
 	Corrected documentation to match module name.
