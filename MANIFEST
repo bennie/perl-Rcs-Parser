@@ -1,9 +1,10 @@
 Changes
 Makefile.PL
 MANIFEST
-META.yml                                 Module meta-data (added by MakeMaker)
+META.yml
 README
 lib/Rcs/Parser.pm
 t/01-instance.t
 t/02-load.t
+t/03-versions.t
 t/test.rcs,v

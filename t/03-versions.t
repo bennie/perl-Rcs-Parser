@@ -1,6 +1,6 @@
 # Does the module parse out versions correctly
 
-use Test::Simple tests => 3 };
+use Test::Simple { tests => 3 };
 
 my @versions = qw/1.109 1.108 1.107 1.106 1.105 1.104 1.103 1.102 1.101 
 1.100 1.99 1.98 1.97 1.96 1.95 1.94 1.93 1.92 1.91 1.90 1.89 1.88 1.87 
