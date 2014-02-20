@@ -18,6 +18,6 @@ my $ret = $rcs->load('t/test.rcs,v');
 
 my @test = $rcs->all_versions();
 
-ok(defined @test);
+ok(@test);
 ok(scalar(@test) == 109);
 ok(join(':',@versions) eq join(':',@test));
