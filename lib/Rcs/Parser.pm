@@ -267,7 +267,7 @@ This method returns an array or arrayref of all versions stored in the RCS file.
 sub all_versions {
   my $self = shift @_;
   unless ( defined $self->{all_versions} ) {
-    $self->{all_versions} = [ sort versioncmp grep !/header/, keys %{$self->{rcs}} ];
+    $self->{all_versions} = [ reverse sort versioncmp grep !/(header|desc)/, keys %{$self->{rcs}} ];
   }
   return wantarray ? @{$self->{all_versions}} : $self->{all_versions};
 }
@@ -552,7 +552,7 @@ CVS.
 
 =head1 AUTHORSHIP:
 
-    Rcs::Parser v0.02 2004/04/02
+    Rcs::Parser vVERSIONTAG (DATETAG)
 
-    (c) 2001-2014, Phillip Pollard <bennie@cpan.org>
+    (c) 2001-YEARTAG, Phillip Pollard <bennie@cpan.org>
     Released under the Perl Artistic License
