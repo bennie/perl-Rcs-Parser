@@ -21,86 +21,10 @@ To install this module type the following:
    make install
 
 ================================================================================
-EXAMPLE USAGE
+USAGE
 ================================================================================
 
-    Retrieve the most recent file from an archive:
-
-      my $rcs = new Rcs::Parser;
-      my $ret = $rcs->load($filename);
-  
-      my $current = $rcs->recent_version;
-
-    To retrieve a specific version:
-
-      my $rcs = new Rcs::Parser;
-      my $ret = $rcs->load($filename);
-  
-      my $specific_version = $rcs->get('1.2');
-
-================================================================================
-METHODS
-================================================================================
-
-  author($version)
-
-    my $author = $rcs->author($version);
-
-    The author method returns the author name of the given version. If no
-    version is given it returns the author of the current loaded version.
-
-  date($version)
-
-    my $date = $rcs->date($version);
-
-    The date method returns the revision date of the given version. If no
-    version is given it returns the date of the current version.
-
-  get($version)
-
-    my $ret = $rcs->get($version);
-
-    This method causes the given version to be retrieved from the archive
-
-  load($filename)
-
-    my $ret = $rcs->load($filename);
-
-    The load command reads in and parses the given filename. If the file
-    does not exist or is unreadable by the script, undef is returned.
-    Otherwise, 1 is returned upon success.
-
-  load_scalar($data)
-
-    my $ret = $rcs->load_scalar($data);
-
-    The load command reads in and parses the provided RCS file in scalar 
-    form. 1 is returned upon success.
-
-  notate()
-
-    my $ret = $rcs->notate()
-
-    This method builds and assembled statistical information for veriosn.
-
-  previous_version()
-
-    my $ver = $rcs->previous_version();
-
-    This method returns the version previous to the currently instanced
-    version.
-
-  recent_version()
-
-    my $ver = $rcs->recent_version();
-
-    This method returns the most current revision of the file.
-
-  version()
-
-    my $ver = $rcs->version();
-
-    This method returns the currently instanced version.
+    Refer to the module's POD for detailed usage.
 
 ================================================================================
 KNOWN ISSUES
@@ -134,7 +58,7 @@ ERATTA
 AUTHORSHIP
 ================================================================================
 
-    Rcs::Parser v0.03 2004/04/02
+    Rcs::Parser vVERSIONTAG (DATETAG)
 
-    (c) 2001-2008, Phillip Pollard <bennie@cpan.org>
+    (c) 2001-YEARTAG, Phillip Pollard <bennie@cpan.org>
     Released under the Perl Artistic License
