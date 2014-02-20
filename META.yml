@@ -8,4 +8,4 @@ version:      VERSIONTAG
 version_from: lib/Rcs/Parser.pm
 requires:
   Sort::Versions: 0
-
+  Test::Simple: 0
