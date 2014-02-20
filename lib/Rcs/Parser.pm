@@ -39,7 +39,7 @@ To retrieve a specific version:
 #*************************************************************************
 
 package Rcs::Parser;
-our $VERSION = '0.03';
+$Rcs::Parser::VERSION = 'VERSIONTAG';
 
 use 5.006;
 use Sort::Versions;
