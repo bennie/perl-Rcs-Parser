@@ -2,7 +2,14 @@ Revision history for Perl extension Rcs::Parser.
 
 VERSIONTAG  DATETAG
 
-	Updated META.yaml and Makefile.PL
+	Corrected sorting error in all_versions() (RT #92644)
+	Corrected all_versions() caching to $self instead of our (RT #92643)
+	 - Thanks to Slaven Rezic for reporting both of the above
+
+	Updated all tests to use Test::Simple
+	Added a unit test for all_versions()
+	Updated META.yaml and Makefile.PL with dependencies
+	Corrected version info throuought documentation and code
 
 0.03  2008/10/23
 
