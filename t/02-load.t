@@ -1,7 +1,6 @@
-# Does it load and can it be instanced
+# Does the module load a test file successfully
 
-use Test;
-BEGIN { plan tests => 3 };
+use Test::Simple tests => 3 };
 
 use Rcs::Parser;
 ok(1);
