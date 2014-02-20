@@ -1,6 +1,6 @@
 # Does the module load a test file successfully
 
-use Test::Simple tests => 1 };
+use Test::Simple { tests => 1 };
 
 use Rcs::Parser;
 my $rcs = new Rcs::Parser;
