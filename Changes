@@ -10,6 +10,7 @@ VERSIONTAG  DATETAG
 	Added a unit test for all_versions()
 	Updated META.yaml and Makefile.PL with dependencies
 	Corrected version info throuought documentation and code
+	Added proper license data
 
 0.03  2008/10/23
 
