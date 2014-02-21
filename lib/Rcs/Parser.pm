@@ -552,7 +552,7 @@ CVS.
 
 =head1 BUGS AND SOURCE
 
-	Bug tracking for this module: https://rt.cpan.org/Ticket/Display.html?id=92644
+	Bug tracking for this module: https://rt.cpan.org/Dist/Display.html?Name=Rcs-Parser
 
 	Source hosting: http://www.github.com/bennie/perl-Rcs-Parser
 
