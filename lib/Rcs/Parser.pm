@@ -556,9 +556,12 @@ CVS.
 
 	Source hosting: http://www.github.com/bennie/perl-Rcs-Parser
 
-=head1 AUTHORSHIP
+=head1 VERSION
 
     Rcs::Parser vVERSIONTAG (DATETAG)
+
+=head1 COPYRIGHT
+
     (c) 2001-YEARTAG, Phillip Pollard <bennie@cpan.org>
 
 =head1 LICENSE
