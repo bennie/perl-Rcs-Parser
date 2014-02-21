@@ -267,7 +267,7 @@ This method returns an array or arrayref of all versions stored in the RCS file.
 sub all_versions {
   my $self = shift @_;
   unless ( defined $self->{all_versions} ) {
-    $self->{all_versions} = [ reverse sort versioncmp grep !/(header|desc)/, keys %{$self->{rcs}} ];
+    $self->{all_versions} = [ sort { versioncmp($b,$a) } grep !/(header|desc)/, keys %{$self->{rcs}} ];
   }
   return wantarray ? @{$self->{all_versions}} : $self->{all_versions};
 }

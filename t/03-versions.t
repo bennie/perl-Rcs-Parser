@@ -20,4 +20,8 @@ my @test = $rcs->all_versions();
 
 ok(@test);
 ok(scalar(@test) == 109);
-ok(join(':',@versions) eq join(':',@test));
+ok(join(':',@versions) eq join(':',@test),'Sort order');
+
+unless ( join(':',@versions) eq join(':',@test) ) {
+  print STDERR "Order is wrong: \n\n",  join(':',@versions), "\n\n",  join(':',@test), "\n\n";
+}
