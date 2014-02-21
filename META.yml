@@ -11,12 +11,24 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Sort::Versions:  0
-    Test::Simple:    0
+    perl:               5.008001
+    Sort::Versions:     0
+    Test::Simple:       0
+resources:
+    bugtracker:
+        web:  https://rt.cpan.org/Dist/Display.html?Name=Rcs-Parser
+    repository:
+        type:  git
+        url:   git://github.com/bennie/perl-Rcs-Parser.git
+        web:   http://github.com/bennie/perl-Rcs-Parser
 no_index:
     directory:
         - t
         - inc
+provides:
+    Rcs::Parser:
+        file: lib/Rcs/Parser.pm
+        version: VERSIONTAG
 generated_by:       ExtUtils::MakeMaker version 6.56
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
