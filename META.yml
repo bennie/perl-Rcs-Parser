@@ -4,7 +4,7 @@ version:            VERSIONTAG
 abstract:           Parse and analyze RCS files.
 author:
     - Phil Pollard <bennie@cpan.org>
-license:            perl_5
+license:            artistic_2
 distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0
