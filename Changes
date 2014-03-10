@@ -2,6 +2,10 @@ Revision history for Perl extension Rcs::Parser.
 
 VERSIONTAG  DATETAG
 
+	Adding a POD test
+
+0.07  2014/02/22
+
 	Including the Artistic 2.0 license as LICENSE
 	Updating meta: perl base, provdies, resources and correct license
 
