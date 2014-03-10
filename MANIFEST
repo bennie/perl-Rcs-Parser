@@ -5,6 +5,7 @@ MANIFEST
 META.yml
 README
 lib/Rcs/Parser.pm
+t/00-pod.t
 t/01-instance.t
 t/02-load.t
 t/03-versions.t
