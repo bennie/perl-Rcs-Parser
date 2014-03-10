@@ -13,7 +13,7 @@ VERSIONTAG  DATETAG
 0.06  2014/02/21
 
 	Corrected sorting error in all_versions() (RT #92644)
-	Corrected all_versions() caching to $self instead of our (RT #92643)
+	Corrected all_versions() to cache with $self instead of "our" (RT #92643)
 	 - Thanks to Slaven Rezic for reporting both of the above
 
 	Updated all tests to use Test::Simple
