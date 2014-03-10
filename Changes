@@ -3,6 +3,7 @@ Revision history for Perl extension Rcs::Parser.
 VERSIONTAG  DATETAG
 
 	Adding a POD test
+	Autogenerating meta data
 
 0.07  2014/02/22
 
